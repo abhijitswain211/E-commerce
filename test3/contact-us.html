@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STALLION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.ico">
+</head>
+<body>
+    <!-- Navigation bar -->
+  <header>
+    <nav>
+      <div class="menu" id="menu">
+        <div class="logo">
+            <a href="index.html">
+              <img src="img/logo.png" alt="STALLION">
+            </a>
+          </div>
+          <ul>
+            <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fa fa-fw fa-building-o"></i> About us</a></li>
+            <li><a class="active" href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+            <li><a href="log-in.html"><i class="fa fa-fw fa-user"></i> Log in</a></li>
+            <li><a href="#"><i class="fa fa-fw fa-shopping-cart"></i> Cart</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Parallax -->
+  <section class="parallax">
+    <div class="hero-text">
+        <h1>CONTACT US</h1>
+        <p>Find the perfect accessories for your motorcycle at STALLION.<br>Explore our wide range of products and elevate your riding experience.</p>
+    </div>
+    <div class="custom-shape-divider-bottom-1709654646">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+  </section>
+
+  <section class="contacts-section">
+    <form class="form">
+      <div class="title">Contact us</div>
+      <input type="text" placeholder="Your email" class="input">
+      <textarea placeholder="Your message"></textarea>
+       
+      <button>Submit</button>
+    </form>
+  </section>
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("menu").style.top = "0";
+      } else {
+        document.getElementById("menu").style.top = "-60px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
+
+</body>
+</html>
